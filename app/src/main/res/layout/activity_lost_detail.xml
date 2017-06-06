@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="www.nupter.org.nupter.activity.LostDetailActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <www.nupter.org.nupter.view.ReactImageView
+                android:id="@+id/avatar_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/avatar_image"
+                android:text="用户001"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userName"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/avatar_image"
+                android:text="2016-2-4" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="校园卡今天在南二食堂二楼的时候不慎丢失不知道有无人看见姓名李四学号是1410拜托了请联系我，可以面交。"
+            android:textColor="@color/lost_textColor"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_url1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+
+               />
+
+            <ImageView
+                android:id="@+id/image_url2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/image_url3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/location_icon"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南二食堂二楼 靠右侧吉祥馄饨一侧"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/date_icon"
+                />
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2月28日"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/commu_icon"
+                />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王怡"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            >
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/phone_icon"
+                />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18351929370"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

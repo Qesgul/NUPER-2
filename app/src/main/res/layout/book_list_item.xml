@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="6dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="6dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/book_list_item_shap"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/book_lib" />
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/is_borrow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="可借： 2" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="馆藏： 2" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/book_info_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="110dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="韩国地方研究所"
+                android:textColor="#4c4c4c"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/abc_author_icon" />
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="陈樱花著"
+                    android:textColor="#717171" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mask_linear"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#7f9ea6a9"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_secon_hand"
+    tools:context="www.nupter.org.nupter.activity.SeconHandActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView1"
+            android:src="@drawable/umeng_socialize_wxcircle" />
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2">
+        <include layout="@layout/secondcontent"></include>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:padding="@dimen/indicator_corner_radius">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:text="description"
+            android:id="@+id/textViewDescription" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:background="@drawable/drawable_bg_publish">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:background="@color/transparent"
+
+            android:id="@+id/editTextdescription"
+            android:maxLines="5"
+            android:hint="@string/info_publish_sec"
+            android:textSize="@dimen/fontsize"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="start"
+            android:layout_above="@+id/btnaddimg" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaddimg"
+            android:background="@drawable/write_lost_icon_4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView1"
+            android:layout_alignTop="@+id/btnaddimg"
+            android:layout_toRightOf="@+id/btnaddimg"
+            android:layout_toEndOf="@+id/btnaddimg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="16dp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView3"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginStart="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

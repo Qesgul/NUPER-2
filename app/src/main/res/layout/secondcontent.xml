@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:padding="@dimen/indicator_corner_radius">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#类别#"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textType" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="info"
+                android:id="@+id/textViewtitle" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageViewavatar"
+                android:src="@mipmap/ic_launcher"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textViewname"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageViewavatar"
+                android:layout_toEndOf="@+id/imageViewavatar" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/textViewmoney"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textViewtime"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/imageViewavatar"
+                android:layout_toEndOf="@+id/imageViewavatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥ "
+                android:id="@+id/textView2"
+                android:layout_alignTop="@+id/textViewmoney"
+                android:layout_toLeftOf="@+id/textViewmoney"
+                android:layout_toStartOf="@+id/textViewmoney" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

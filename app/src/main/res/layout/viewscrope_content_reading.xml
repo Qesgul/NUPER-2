@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <www.nupter.org.nupter.view.MyBanner
+        android:id="@+id/reading_mybanner"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp">
+    </www.nupter.org.nupter.view.MyBanner>
+
+    <ListView
+        android:id="@+id/reading_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:background="#ffffff"
+        android:divider="#ececec"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:layout_marginLeft="5dp"
+        >
+    </ListView>
+
+</LinearLayout>

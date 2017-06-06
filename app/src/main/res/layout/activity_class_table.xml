@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ClassTableActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/abc_back"
+                android:layout_margin="12dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="第三周"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_spinner"
+                android:layout_toRightOf="@+id/week"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <www.nupter.org.nupter.view.TopTable
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <www.nupter.org.nupter.view.MyTable
+                android:id="@+id/myTable"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"></www.nupter.org.nupter.view.MyTable>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

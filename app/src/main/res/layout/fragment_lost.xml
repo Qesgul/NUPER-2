@@ -1,0 +1,21 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="www.nupter.org.nupter.fragment.ReadingFragment">
+
+    <www.nupter.org.nupter.widget.XListView
+        android:id="@+id/list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:divider="#ececec"
+        android:dividerHeight="15dp"
+        >
+    </www.nupter.org.nupter.widget.XListView>
+
+    <ImageButton android:id="@+id/btnpublish"
+        android:layout_width="48dp" android:layout_height="48dp"
+        android:layout_gravity="bottom|end" android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/store_icon_1" />
+</FrameLayout>

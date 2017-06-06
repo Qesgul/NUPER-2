@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191919"
+    android:orientation="vertical"
+    tools:context="www.nupter.org.nupter.activity.ImageDetail">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_bar_bg">
+
+        <ImageView
+            android:id="@+id/detail_image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_menu_back" />
+
+        <TextView
+            android:id="@+id/detail_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="1/39"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+
+    <www.nupter.org.nupter.view.MyviewPager
+        android:id="@+id/myViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"></www.nupter.org.nupter.view.MyviewPager>
+</LinearLayout>

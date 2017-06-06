@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#f1f3f4"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <www.nupter.org.nupter.view.ReactImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="55dp"
+            />
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="未登录"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@id/setting"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:background="#d8d9da" />
+
+        <TextView
+            android:id="@+id/quite"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="退出应用"
+            android:textColor="@color/text_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

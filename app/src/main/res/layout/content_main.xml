@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/header_left_ll"
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/image_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:src="@drawable/icon_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/header_left_ll"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="掌上南邮"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            android:src="@drawable/notify_nomal" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/circle" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_bg_color"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/main_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+
+                >
+
+                <ImageView
+                    android:id="@+id/main_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/main2" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/read_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/read1" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/eye_rela"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/main_eye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/eyes"
+
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/sec_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/second1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lost_rela"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/main_lost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/lost1" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

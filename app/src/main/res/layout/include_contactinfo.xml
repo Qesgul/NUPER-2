@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/drawable_bg_publish"
+        android:layout_height="100dp"
+        android:padding="@dimen/footer_padding"
+        >
+
+
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+
+            android:inputType="phone"
+
+            android:background="@drawable/edit_grey"
+            android:textSize="@dimen/fontsize"
+            android:padding="@dimen/editpadding"
+            android:id="@+id/editTextphone"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="联系方式"
+            android:id="@+id/textView3"
+            android:layout_alignBaseline="@+id/editTextphone"
+            android:layout_alignBottom="@+id/editTextphone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入qq/微信"
+            android:padding="@dimen/editpadding"
+            android:inputType="phone"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+            android:background="@drawable/edit_grey"
+            android:textSize="@dimen/fontsize"
+            android:id="@+id/editTextqq"
+            android:layout_below="@+id/editTextphone"
+            android:layout_alignLeft="@+id/editTextphone"
+            android:layout_alignStart="@+id/editTextphone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4"
+            android:src="@drawable/write_lost_star_2"
+            android:layout_above="@+id/editTextqq"
+            android:layout_toRightOf="@+id/editTextphone"
+            android:layout_toEndOf="@+id/editTextphone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView5"
+            android:src="@drawable/write_lost_star_2"
+            android:layout_alignBottom="@+id/editTextqq"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4" />
+
+
+    </RelativeLayout>
+</LinearLayout>

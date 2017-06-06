@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="www.nupter.org.nupter.activity.SearchBookActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/quite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/abc_back" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:closeIcon="@drawable/abc_clear"
+            android:focusableInTouchMode="true"
+            android:searchIcon="@drawable/abc_search"></SearchView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_info_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/search_info" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入你想要在图书馆里寻找的书籍的
+全称或关键字，进行查找"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+
+            />
+    </LinearLayout>
+
+    <www.nupter.org.nupter.widget.XListView
+        android:id="@+id/book_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ececec"
+        android:divider="#FFCC00"></www.nupter.org.nupter.widget.XListView>
+
+
+</LinearLayout>

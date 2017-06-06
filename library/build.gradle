@@ -1,0 +1,25 @@
+apply plugin: 'android-library'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    sourceSets {
+        defaultConfig {
+            minSdkVersion 12
+            targetSdkVersion 23
+        }
+
+        main {
+            assets.srcDirs       = ['assets']
+            res.srcDirs          = ['res']
+            aidl.srcDirs         = ['src']
+            resources.srcDirs    = ['src']
+            renderscript.srcDirs = ['src']
+            java.srcDirs         = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+
+        }
+    }
+}

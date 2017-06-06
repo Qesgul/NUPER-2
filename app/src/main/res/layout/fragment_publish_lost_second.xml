@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pb_lost_edit_bg"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/person"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/select_publish_lost_edit"
+                android:hint="你的姓名，学号等有用信息"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="丢失时间"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/select_publish_lost_edit"
+                android:hint="丢失的时间范围,日期等"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="丢失位置"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/site"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/select_publish_lost_edit"
+                android:hint="学校/食堂/活动中心"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="联系方式"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/select_publish_lost_edit"
+                android:hint="有效的手机号"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

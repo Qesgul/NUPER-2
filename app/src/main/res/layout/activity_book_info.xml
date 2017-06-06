@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="www.nupter.org.nupter.activity.BookInfoActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_bookinfo_linear"
+                android:orientation="vertical"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/book_info_text_drawable"
+                    android:text="详细简介"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/book_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="韩国年金制度改革路径选择：瑞典、智利，日本"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_author" />
+
+                    <TextView
+                        android:id="@+id/author"
+                        android:text="作者"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_pen"
+                        android:layout_marginLeft="3dp"
+                        />
+                    <TextView
+                        android:id="@+id/publish"
+                        android:text="出版社"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_star" />
+                    <TextView
+                        android:id="@+id/intro"
+                        android:text="详细介绍"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+
+                <www.nupter.org.nupter.view.NoScrollListview
+                    android:id="@+id/noscrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/white"
+                    android:dividerHeight="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+
+                </www.nupter.org.nupter.view.NoScrollListview>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/borrow_num"
+            android:background="@drawable/book_info_text_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="啦啦啦啦"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

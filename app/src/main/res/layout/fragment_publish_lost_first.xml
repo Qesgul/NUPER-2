@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/des"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="请大致描述失物特征与相关信息"
+        android:lines="5"
+        android:padding="5dp"
+        android:imeOptions="actionNext"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20dp">
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配合图片效果更佳\n图片不超过3张"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            />
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:numColumns="3">
+        </GridView>
+    </RelativeLayout>
+</LinearLayout>
